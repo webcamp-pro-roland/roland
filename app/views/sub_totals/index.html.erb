@@ -1,21 +1,14 @@
-<h2>購入画面</h2>
-
-            <!--カートのeach文  -->
-    <% @books.each do |book| %>
-
-	<p>CDタイトル<%= book.title %></p>
-	<p><%= attachment_image_tag @user, :photo, :fill, 20, 20, format: 'jpeg', fallback: "no_image.jpg" %></p>
-	<p>アーティスト名<%= book.body %></p>
-	<p>ジャンル<%= book.body %></p>
-	<p>レーベル<%= book.body %></p>
-	<p>枚数<%= book.body %></p>
-	<p>金額<%= book.body %></p>
-
-    <% end %>
-
+<h2>購入確定画面</h2>
+    <%# @sub_totals.each do |s| %>
+		<p>CDタイトル<%#= s.cd.title %></p>
+		<p><%#= attachment_image_tag s, :cd_image, :fill, 20, 20, format: 'jpeg', fallback: "no_image.jpg" %></p>
+		<p>アーティスト名<%#= s.cds.artist %></p>
+		<p>ジャンル<%#= s.cds. %></p>
+		<p>レーベル<%#= s.cds. %></p>
+		<p>枚数<%#= s.cds. %></p>
+		<p>金額<%#= s.cds. %></p>
+    <%# end %>
 <h3>合計金額$</h3>
-<!-- 合計金額計算してください。コントローラーで計算して＠変数で渡すのもやりやすそうです -->
-
 <p>お届け先選択<br>
 <form>
 <input type="radio" > aa町aa番地
@@ -23,10 +16,7 @@
 </p>
 <input type="submit" value="お届け先を決定">
 </form>
-<%= link_to "お届け先を追加する" %>
-
-
-
+<%= link_to "お届け先を追加する", class: 'btn btn-default' %>, adress_path
 <p>決済方法<br>
 <form>
 <input type="radio" name="" value="">a-aa-aaa
@@ -34,12 +24,9 @@
 </p>
 <input type="submit" value="決済方法決定">
 </form>
-
-<%= link_to "クレジット情報を登録する" %>
-
+<%= link_to "クレジット情報を登録する", credits_path, class: 'btn btn-default'  %>
 <!--   ラジオボタン参考にしたサイト   http://www-creators.com/archives/2386 -->
-
-<p><%= link_to "戻る" %></p>
-<p><%= link_to "注文を確定する" %></p>
+<p><%= link_to "戻る", class: 'btn btn-default'  %></p>, edit_user_path
+<p><%= link_to "注文を確定する", class: 'btn btn-default'  %></p>, sub_totals_finish_path
 </div>
 
