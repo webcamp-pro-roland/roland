@@ -167,7 +167,7 @@ ActiveRecord::Schema.define(version: 2018_10_16_061009) do
     t.string "user_image"
     t.text "user_profile"
     t.datetime "leave_at"
-    t.boolean "admin"
+    t.boolean "admin", default: false
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
