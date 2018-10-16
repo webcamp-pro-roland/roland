@@ -1,0 +1,2 @@
+module CdFavoritesHelper
+end

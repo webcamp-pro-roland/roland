@@ -1,0 +1,91 @@
+<!-- 自分がわかりやすくするためにスタイル指定しましたが気にしないで変更したり削除してください -->
+<section>
+	<h3>注文履歴一覧</h3>
+
+	<table border="0" cellpadding="0" cellpadding="0" style="width: 800px;">
+		<tr>
+			<td style="width: 110px; background-color: gray;">購入日</td>
+			<td style="width: 140px; background-color: yellow;">購入者</td>
+			<td style="width: 100px; background-color: gray;">合計金額</td>
+			<td style="background-color: yellow;">購入楽曲</td>
+			<td style="width: 170px; background-color: gray;">ステータス</td>
+		</tr>
+		<tr>
+			<td>
+				<%= link_to "2018/01/02" %></td>
+			<td>花子</td>
+			<td>¥2,000</td>
+			<td>
+				<ul>
+					<li>上を向いて歩こう</li>
+					<li>赤とんぼ</li>
+					<li>なんかのアルバム</li>
+					<li>そういうシングル</li>
+				</ul>
+			</td>
+			<td>
+				<form>
+					<select>
+					<option value="" selected>配送状況 / 受付中</option>
+					<option value="">商品準備中</option>
+					<option value="">配送中</option>
+					<option value="">出荷済</option>
+					</select>
+					<button type='submit' style="color: red;">更新</button>
+					<!-- プルダウンや更新は管理者のみ見れるので注意 -->
+				</form>
+			</td>
+		</tr>
+
+<!-- 以下each要素なので削除してください -->
+		<tr>
+			<td><%= link_to "2018/01/01" %></td>
+			<td>花子</td>
+			<td>¥1,000</td>
+			<td>
+				<ul>
+					<li>アンパンマンのマーチ</li>
+					<li>宇宙戦艦ヤマト</li>
+				</ul>
+			</td>
+			<td>
+				<form>
+					<select>
+					<option value="" selected>配送状況 / 受付中</option>
+					<option value="">商品準備中</option>
+					<option value="">配送中</option>
+					<option value="">出荷済</option>
+					</select>
+					<button type='submit' style="color: red;">更新</button>
+					<!-- 更新は管理者のみ見れるので注意 -->
+				</form>
+			</td>
+		</tr>
+		<tr>
+			<td><%= link_to "2018/01/01" %></td>
+			<td>花子</td>
+			<td>¥100,000</td>
+			<td>
+				<ul>
+					<li>だんご三兄弟</li>
+					<li>マツケンサンバ</li>
+				</ul>
+			</td>
+			<td>
+				<form>
+					<select>
+					<option value="" selected>配送状況 / 受付中</option>
+					<option value="">商品準備中</option>
+					<option value="">配送中</option>
+					<option value="">出荷済</option>
+					</select>
+					<button type='submit' style="color: red;">更新</button>
+					<!-- 更新は管理者のみ見れるので注意 -->
+				</form>
+			</td>
+		</tr>
+	</table>
+	<!-- 戻るいらなかったら消してください -->
+	<p><%= link_to "戻る" %></p>
+
+</section>

@@ -1,0 +1,113 @@
+        <% end %>
+<div>
+			<%= form_for(@book) do |f| %>
+			    <h4>タイトル</h4>
+			    <%= f.text_field :title %>
+			    <h4>アーティスト名</h4>
+			    <%= f.text_field :body %>
+			    <h4>金額</h4>
+			    <%= f.text_field :body %>
+			    <h4>レーベル名</h4>
+			    <%= f.text_field :body %>
+			    <h4>ジャンル</h4>
+			    <%= f.text_field :body %>
+			    <form>
+<p>性別</p>
+<select>
+<option>男性アーティスト</option>
+<option>女性アーティスト</option>
+</select></form>
+
+<form>
+<p>国籍</p>
+<select>
+<option>邦楽</option>
+<option>洋楽</option>
+</select></form>
+
+
+
+<form>
+<p>ジャンル</p>
+<select>
+<option>ロック</option>
+<option>クラッシック</option>
+<option>パンク</option>
+<option>メタル</option>
+</select></form>
+
+
+<!-- <form> -->
+<!-- <p>disk</p> -->
+<!-- <select> -->
+<!-- <option>1</option> -->
+<!-- <option>2</option> -->
+<!-- <option>3</option> -->
+<!-- </select></form> -->
+
+
+
+			    <form name="formname1">
+  <input type="checkbox" name="checkboxname" id="formname1" onclick="appear('test');"/>
+  &nbsp;<label for="formname1">disk2</label>
+</form>
+
+
+<h4>disk1曲目</h4>
+			    <li>1</li><%= f.text_field :body %>
+			    <li>2</li><%= f.text_field :body %>
+			    <li>3</li><%= f.text_field :body %>
+			    <li>4</li><%= f.text_field :body %>
+			    <li>5</li><%= f.text_field :body %>
+			    <li>6</li><%= f.text_field :body %>
+			    <li>7</li><%= f.text_field :body %>
+			    <li>8</li><%= f.text_field :body %>
+			    <li>9</li><%= f.text_field :body %>
+			    <li>10</li><%= f.text_field :body %>
+			    <li>11</li><%= f.text_field :body %>
+			    <li>12</li><%= f.text_field :body %>
+
+			     <div id="test" style="display:none;">
+			    	<h4>disk2曲目</h4>
+			    <li>1</li><%= f.text_field :body %>
+			    <li>2</li><%= f.text_field :body %>
+			    <li>3</li><%= f.text_field :body %>
+			    <li>4</li><%= f.text_field :body %>
+			    <li>5</li><%= f.text_field :body %>
+			    <li>6</li><%= f.text_field :body %>
+			    <li>7</li><%= f.text_field :body %>
+			    <li>8</li><%= f.text_field :body %>
+			    <li>9</li><%= f.text_field :body %>
+			    <li>10</li><%= f.text_field :body %>
+			    <li>11</li><%= f.text_field :body %>
+			    <li>12</li><%= f.text_field :body %>
+			</div>
+
+
+
+
+			    <h4>pop</h4>
+			    <%= f.text_area :body %>
+			    <br>
+			    <%= f.submit '更新する' %>
+			<% end %>
+
+
+			<%= link_to "Show" %>
+			<a>|</a>
+			<%= link_to "Back" %>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,70 @@
+<div>
+			<h2>商品詳細</h2>
+
+
+
+                            <%= attachment_image_tag @book.user, :photo, :fill, 20, 20, format: 'jpeg', fallback: "no_image.jpg" %>
+                            <br>
+						    <div>
+                                <p>金額<%= @book.body %></p>
+                                <p>在庫数<%= @book.body %></p>
+
+                                <!-- 以下のif文内はadminしか表示されないようにする -->
+                                <% if @book.user == current_user %>
+                            <p><%= link_to '編集' ,edit_book_path(@book) %></p>
+　　　　　　　　　　　　　　　　 <p><%= link_to '削除',book_path(@book),method: :delete, data: {confirm: 'Are you sure?'} %></p>
+                            <% end %>
+
+
+                            </div>
+　　　　　　　　　　　　　　　　<div>
+                            <p>ここにpop内容<%= @book.body %></p>
+                            <p>タイトル<%=  %></p>
+                            <p>アーティスト名<%= @book.body %></p>
+                            <p>ジャンル<%= @book.body %></p>
+                            <p>レーベル<%= @book.body %></p>
+                        </div>
+                        <div>
+                            <p>曲目<%=  %></p>
+
+
+                             <!-- ここにレビュー一覧each文 -->
+                            </div>
+
+
+
+                    <%= link_to '戻る'  %>
+                    <%= link_to 'お気に入り'  %>
+                    <%= link_to 'カートへ'  %>
+                    <%= link_to '購入'  %>
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

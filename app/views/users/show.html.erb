@@ -1,0 +1,13 @@
+<h1>マイページ</h1>
+@user.user_image<%#= attachment_image_tag @users,:user_image, :fill, 100, 100, format: 'jpeg', class: "img-circle pull-left profile-img", fallback: "no_image.jpg" %>
+<h5>名前</h5>
+<%#= @users.user_name  %>
+<h5>プロフィール</h5>
+<%#= @users.profile  %>
+※if @user == current_user <br>
+<%= link_to '会員情報確認設定' %><br>
+<%= link_to 'お気に入りユーザー一覧'%><br>
+※else<br>
+<%= link_to 'ダイレクトメッセージ' %><br>
+<%= button_to 'お気に入りに登録', class: "addtofavorite"  %><br>
+※end<br>

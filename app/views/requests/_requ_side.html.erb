@@ -1,0 +1,45 @@
+<!-- 自分がわかりやすくするためにスタイル指定しましたが気にしないで変更したり削除してください -->
+<!-- cssでfloat指定しないとレイアウトが変になってる状態になっていると思います -->
+
+<main class="clearfix">
+<section class="requ_side">
+
+<h3>投稿リクエスト一覧</h3>
+
+<div>
+	<div style="border: 1px solid black; background-color: gray;">
+			<p>
+				<b><%= link_to "泳げたいやきくん" %></b>
+			</p>
+	</div>
+	<div>
+			<p>
+				初期のCD探しています！<br>
+				時代からして仕方ないと思いつつできる限りキレイだと嬉しいです！
+			</p>
+	</div>
+	<div style="border: 1px solid black; background-color: lightgray; margin-bottom: 10px;">
+			<%= link_to "編集" %>
+			<%= link_to "削除" %>
+	</div>
+
+<!-- 以下each見本用 ここから-->
+	<div style="border: 1px solid black; background-color: gray;">
+			<p>
+				<b><%= link_to "なんでも" %></b>
+			</p>
+	</div>
+	<div>
+			<p>
+				なんでもいいのでオススメのCD1円で譲ってください！
+			</p>
+	</div>
+	<div style="border: 1px solid black; background-color: lightgray; margin-bottom: 10px;">
+			<%= link_to "編集" %>
+			<%= link_to "削除" %>
+	</div>
+<!-- ここまでeach -->
+
+</div>
+
+</section>

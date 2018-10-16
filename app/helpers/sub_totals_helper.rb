@@ -1,0 +1,2 @@
+module SubTotalsHelper
+end

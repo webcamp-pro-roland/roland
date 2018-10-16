@@ -1,0 +1,83 @@
+<script language="JavaScript" type="text/javascript">
+<!--
+  // 「全て選択」チェックで全てにチェック付く
+  function AllChecked(){
+    var all = document.form.all.checked;
+    for (var i=0; i<document.form.test.length; i++){
+      document.form.test[i].checked = all;
+    }
+  }
+ </script>
+<h1>カートview</h1>
+	<form name="form">
+	  <label>
+	    <input type="checkbox" name="all" onClick="AllChecked();" />一括チェック</label>
+	    <%= link_to "購入する" %>
+	    合計金額:¥
+	    <%# @cd.each do |cd| %>
+		  <p>
+		    <label>
+		      <input type="checkbox" name="test" />
+		      	ジャケット画像
+				<%#= attachment_image_tag cd, :cd_image, :fill, 100, 100, format: %>
+					アーティスト名<%#= cd.artist %>
+					タイトル<%#= cd.cd_title %>
+					枚数選択
+					<select name=”枚数”>
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+					<option>6</option>
+					<option>7</option>
+					<option>8</option>
+					<option>9</option>
+					</select>
+					<%= link_to "カートから削除", method: :delete, class: "destroy" %>
+		    </label><br>
+		    <label>
+		      <input type="checkbox" name="test" />
+		      	ジャケット画像
+				<%#= attachment_image_tag cd, :cd_image, :fill, 100, 100, format: %>
+					アーティスト名<%#= cd.artist %>
+					タイトル<%#= cd.cd_title %>
+					枚数選択
+					<select name=”枚数”>
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+					<option>6</option>
+					<option>7</option>
+					<option>8</option>
+					<option>9</option>
+					</select>
+					<%= link_to "カートから削除", method: :delete, class: "destroy" %>
+		    </label><br>
+		    <label>
+		      <input type="checkbox" name="test" />
+		      	ジャケット画像
+				<%#= attachment_image_tag cd, :cd_image, :fill, 100, 100, format: %>
+					アーティスト名<%#= cd.artist %>
+					タイトル<%#= cd.cd_title %>
+					枚数選択
+					<select name=”枚数”>
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+					<option>6</option>
+					<option>7</option>
+					<option>8</option>
+					<option>9</option>
+					</select>
+					<%= link_to "カートから削除", method: :delete, class: "destroy" %>
+		    </label><br>
+		  </p>
+	</form>
+	<%= link_to "購入する" %>
+	合計金額:¥
+

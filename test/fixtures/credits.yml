@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_id: 1
+  credit_infomation: MyString
+  credit_destroy_at: 2018-10-16 05:11:16
+
+two:
+  user_id: 1
+  credit_infomation: MyString
+  credit_destroy_at: 2018-10-16 05:11:16

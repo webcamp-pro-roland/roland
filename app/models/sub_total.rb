@@ -1,0 +1,2 @@
+class SubTotal < ApplicationRecord
+end

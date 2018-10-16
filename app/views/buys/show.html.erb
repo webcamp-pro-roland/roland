@@ -1,0 +1,92 @@
+<!-- 自分がわかりやすくするためにスタイル指定しましたが気にしないで変更したり削除してください -->
+<section>
+
+	<h3>注文詳細</h3>
+	<table  border="0" style="width: 700px;">
+		<tr>
+			<td style="width: 80px; background-color: gray;">注文日</td>
+			<td style="width: 160px; background-color: yellow;">決済方法</td>
+			<td style="width: 270px; background-color: gray;">お届け先住所</td>
+			<td style="background-color: yellow;">合計金額</td>
+
+		</tr>
+		<tr>
+			<td>2018/01/01</td>
+			<td>
+			クレジット支払い<br>
+			****-****-****-1234</td>
+			<td>
+				603-8361<br>
+				京都府京都市北区金閣寺町１<br>
+				足利義満
+			</td>
+			<td>¥10,000</td>
+
+		</tr>
+	</table>
+</section>
+
+<section>
+	<h3>注文商品詳細</h3>
+	<table  border="1" style="width: 700px;">
+		<tr>
+			<td rowspan="4" style="width: 110px;">
+				<img src="assets/re-hiyoko.png" style=""><br>
+				<%= link_to ">>商品詳細へ" %>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2">葉加瀬太郎</td>
+		</tr>
+			<tr>
+			<td>情熱大陸</td>
+			<td style="width: 60px;">1枚</td>
+		</tr>
+		<tr>
+			<td colspan="2">小計：¥1,000</td>
+		</tr>
+	</table>
+
+<!-- 以下each要素なので消してください -->
+
+	<table  border="1" style="width: 700px;">
+		<tr>
+			<td rowspan="4" style="width: 110px;">
+				<img src="assets/re-hiyoko.png" style=""><br>
+				<%= link_to ">>商品詳細へ" %>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2">葉加瀬次郎</td>
+		</tr>
+			<tr>
+			<td>情熱大陸</td>
+			<td style="width: 60px;">2枚</td>
+		</tr>
+		<tr>
+			<td colspan="2">小計：¥2,000</td>
+		</tr>
+	</table>
+	<table  border="1" style="width: 700px;">
+		<tr>
+			<td rowspan="4" style="width: 110px;">
+				<img src="assets/re-hiyoko.png" style=""><br>
+				<%= link_to ">>商品詳細へ" %>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2">葉加瀬三郎</td>
+		</tr>
+			<tr>
+			<td>情熱大陸</td>
+			<td style="width: 60px;">3枚</td>
+		</tr>
+		<tr>
+			<td colspan="2">小計：¥3,000</td>
+		</tr>
+	</table>
+
+
+	<p><%= link_to "戻る" %></p>
+
+</section>

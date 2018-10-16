@@ -1,0 +1,76 @@
+<!-- 自分がわかりやすくするためにスタイル指定しましたが気にしないで変更したり削除してください -->
+<!-- cssでrequ_side、requ_inをfloat指定しないとレイアウトが変になってる状態になっていると思います -->
+
+<%= render 'requests/requ_side' %>
+
+<div class="requ_in">
+
+	<form id="form1" action="http://localhost:3000/" method="get">
+		<input id="sbox1" id="s" name="s" type="search" placeholder="リクエスト検索" />
+		<input id="sbtn1" type="submit" value="検索" />
+	</form>
+	<section>
+
+		<h3>リクエスト一覧</h3>
+
+
+		<table border="0" style="width: 600px;">
+			<tr>
+				<td rowspan="4" style="width: 70px; background-color: gray;"><img src="assets/re-hiyoko.png" style="width: 60px; border-radius: 50%;"></td>
+			</tr>
+			<tr>
+				<td style="width: 400px; background-color: lightgray;"><%= link_to "泳げたいやきくん" %></td>
+				<td>¥500</td>
+			</tr>
+			<tr>
+				<td><%= link_to "DMを送る" %></td>
+				<td><%= link_to "削除" %></td>
+			</tr>
+		</table>
+
+<!-- 以下each見本用 -->
+<p><%= link_to "リクエストを投稿する", new_request_path %></p>
+		<table border="0" style="width: 600px;">
+			<tr>
+				<td rowspan="4" style="width: 70px; background-color: gray;"><img src="assets/re-hiyoko.png" style="width: 60px; border-radius: 50%;"></td>
+			</tr>
+			<tr>
+				<td style="width: 400px; background-color: lightgray;"><%= link_to "なんか程々に有名な曲" %></td>
+				<td>¥1,000</td>
+			</tr>
+			<tr>
+				<td><%= link_to "DMを送る" %></td>
+				<td><%= link_to "削除" %></td>
+			</tr>
+		</table>
+		<table border="0" style="width: 600px;">
+			<tr>
+				<td rowspan="4" style="width: 70px; background-color: gray;"><img src="assets/re-hiyoko.png" style="width: 60px; border-radius: 50%;"></td>
+			</tr>
+			<tr>
+				<td style="width: 400px; background-color: lightgray;"><%= link_to "ガチャピン" %></td>
+				<td>¥10,000</td>
+			</tr>
+			<tr>
+				<td><%= link_to "DMを送る" %></td>
+				<td><%= link_to "削除" %></td>
+			</tr>
+		</table>
+
+	</section>
+	<table border="0" style="width: 600px;">
+		<tr>
+	<% @requests.each do |request| %>
+	<td><%= request.request_title %></td>
+	<td><%= request.reguest_body%></td>
+	<td><%= request.request_price%></td>
+</tr>
+<% end %>
+</table>
+</div>
+
+</main>
+<!-- この/mainを消すと部分テンプレートが崩れる可能性あります -->
+
+
+

@@ -1,0 +1,18 @@
+<div>
+	<h2>コメント詳細</h2>
+	
+			<% @users.each do |user| %>
+
+			<p>CDタイトル<%= user.name %></p>
+			<p><%= attachment_image_tag user, :photo, :fill, 20, 20, format: 'jpeg', fallback: "no_image.jpg" %></p>
+			<p>コメントタイトル<%= user.name %></p>
+			<p>コメント本文<%= user.name %></p>
+			<div class="star-rating">
+  <div class="star-rating-item" style="width:50%;"></div>
+</div>
+
+		    <% end %>
+
+		    <p><%= link_to "戻る" %></p>
+	
+</div>

@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  artist: MyString
+  cd_title: MyString
+  cd_image: MyString
+  cd_price: MyString
+  label: MyString
+  pop: MyText
+  gender: MyString
+  stock: 1
+  country: MyString
+
+two:
+  artist: MyString
+  cd_title: MyString
+  cd_image: MyString
+  cd_price: MyString
+  label: MyString
+  pop: MyText
+  gender: MyString
+  stock: 1
+  country: MyString

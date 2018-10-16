@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_id: 1
+  street: MyString
+  another_name: MyString
+  another_postal_code: MyString
+  adress_destroy_at: 2018-10-16 05:07:55
+
+two:
+  user_id: 1
+  street: MyString
+  another_name: MyString
+  another_postal_code: MyString
+  adress_destroy_at: 2018-10-16 05:07:55

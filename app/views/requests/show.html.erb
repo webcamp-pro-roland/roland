@@ -1,0 +1,33 @@
+<!-- 自分がわかりやすくするためにスタイル指定しましたが気にしないで変更したり削除してください -->
+<!-- cssでrequ_side、requ_sho、requ_sho1、requ_sho2、requ_sho4、requ_sho5をfloat:left指定しないとレイアウトが変になってる状態になっていると思います -->
+
+<%= render 'requests/requ_side' %>
+
+<h3>リクエスト詳細ページ</h3>
+
+<div class="requ_sho clearfix" style="width: 750px;">
+
+	<div class="requ_sho1" style="width: 150px; height: 600px; background-color: hotpink;">
+		<div><img src="assets/re-hiyoko.png" style="border-radius: 50%; width: 150px;"></div>
+		<div>ぼんじり</div>
+	</div>
+
+	<div class="requ_sho2" style="width: 600px; height: 600px;">
+		<div class="requ_sho3 clearfix" style="width: 600px;">
+			<div class="requ_sho4" style="background-color: blue; width: 450px; height: 60px; line-height: 60px;">泳げたいやきくん</div>
+			<div class="requ_sho5" style="background-color: red; width: 150px; height: 60px; line-height: 60px;">¥500</div>
+		</div>
+		<div style="background-color: orange; height: 480px; border-radius: 10px;">
+			初期のCD探しています！<br>
+			時代からして仕方ないと思いつつできる限りキレイだと嬉しいです！
+		</div>
+		<div style="background-color: pink; height: 60px; line-height: 60px; border-radius: 10px;">ダイレクトメッセージを送る</div>
+	</div>
+
+	<%= link_to "削除" %>
+	<!-- この削除は管理者のみです -->
+</div>
+
+
+</main>
+<!-- この/mainを消すと部分テンプレートが崩れる可能性あります

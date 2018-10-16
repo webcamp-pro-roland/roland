@@ -1,0 +1,43 @@
+<h1>会員情報確認</h1>
+<%#= form_for do |f| %>
+  <%#= devise_error_messages! %>
+  <div class="field">
+    <h5>ユーザー画像選択</h5>
+    <%#= attachment_tag_field :user_image, autofocus: true, autocomplete: "user_image", class: 'user_image' %>
+    <h5>ニックネーム</h5>
+    <%= text_field :nickname, autofocus: true, autocomplete: "nickname", class: 'nickname' %>
+  </div>
+  <div class="field">
+    <h5>お名前(フルネーム)</h5>
+    <%= text_field :name, autofocus: true, autocomplete: "name", class: 'name' %>
+  </div>
+  <div class="field">
+    <h5>フリガナ</h5>
+    <%= text_field :furigana, autofocus: true, autocomplete: "furigana", class: 'furigana' %>
+  </div>
+  <div class="field">
+    <h5>郵便番号</h5>
+    <%= text_field :postal_code, autofocus: true, autocomplete: "postal_code", class: 'postal_code' %>
+  </div>
+  <div class="field">
+    <h5>住所</h5>
+    <%= text_field :location, autofocus: true, autocomplete: "location", class: 'location' %>
+  </div>
+  <div class="field">
+    <h5>電話番号</h5>
+    <%= text_field :tel, autofocus: true, autocomplete: "tel", class: 'tel' %>
+  </div>
+  <div class="field">
+    <h5>メールアドレス</h5>
+    <%= email_field :user_mail, autofocus: true, autocomplete: "user_mail", class: 'user_mail' %>
+  </div>
+<%# end %>
+  <%= submit_tag '完了' %>
+  <br><%= link_to '戻る', class: 'back' %>
+  <br><%= link_to '注文履歴', class: 'order history' %>
+  <h5>クレジット</h5>
+  <%#= @user.credits.credit_information %>
+  <br><%= link_to 'クレジット情報確認', class: 'credit' %>
+  <br><%= link_to '別お届先登録', class: 'street' %>
+  <br><%= link_to 'パスワード変更', class: 'user_password' %>
+  <br><%= link_to '退会する', class: 'taikai' %>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Roland</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+
+  
+    <header>
+    <strong><h1>Roland</h1></strong>
+      <nav>
+       *if user_signed_in?
+        <ul>
+          <li><%= link_to 'Home', class: 'home' %></li>
+          <li><%= link_to 'マイページ', class: 'my_page' %></li>
+          <li><%= link_to 'カート', class: 'cart' %></li>
+          <li><%= link_to 'リクエスト一覧', class: 'request_List' %></li>
+          <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: 'logout' %></li>
+        </ul>
+      <!-- -------------if リクエスト一覧ページ------------- -->
+        <ul>
+          <li><%= link_to 'Home', class: 'home' %></li>
+          <li><%=  link_to 'マイページ', class: 'my_page' %></li>
+          <li><%=  link_to 'リクエスト一覧', class: 'request_List' %></li>
+          <li><%= link_to 'リクエスト投稿', class: 'contribution' %></li>
+          <li><%=  link_to 'ログアウト', destroy_user_session_path, method: :delete, class: 'logout' %></li>
+        </ul>
+      <!-- ----------------------------------------------- -->
+      *else
+        <ul>
+          <li><%=  link_to 'Home', class: 'home' %></li>
+          <li><%=  link_to '会員登録', class: 'sign_up' %></li>
+          <li><%=  link_to '会員ログイン', class: 'sign_in' %></li>
+        </ul>
+      *end
+      </nav>
+    </header>
+    
+
+
+    <%= yield %>
+
+    <footer>
+      <h5>キーワード</h5>
+        <%= text_field_tag :search %>
+        <%= submit_tag 'Search' %>
+      <h5>お問い合わせ</h5>
+      <h5>messages</h5>
+    </footer>
+  </body>
+</html>

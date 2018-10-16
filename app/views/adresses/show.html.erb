@@ -1,0 +1,60 @@
+<!-- 自分がわかりやすくするためにスタイル指定したりinput入れたりしてますが気にしないで変更したり削除してください -->
+<section>
+	<h3>登録済み住所一覧</h3>
+
+<!-- 実装時はコメントアウトして%=を加えたりform_forの中にdoや||を加えてください →よければコピペして使ってね f.text_field f.text_area f.submit  -->
+	<!--  form_for()  -->
+		<table>
+			<tr>
+				<td>
+					<input placeholder="名前">
+					<button type='submit'>編集</button>
+				</td>
+				<td>
+					<input placeholder="郵便番号">
+					<button type='submit'>編集</button>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>
+					<input placeholder="住所">
+					<button type='submit'>編集</button>
+				</td>
+				<td rowspan="4">
+					<button type='submit'>この住所を削除する</button>
+				</td>
+			</tr>
+		</table>
+		<!--  en d  -->
+
+</section>
+
+<section>
+
+	<h3>お届け先住所新規登録</h3>
+
+	<!--  form_for()  -->
+		<table>
+			<tr>
+				<td>
+					<input placeholder="名前()">
+				</td>
+				<td>
+					<input placeholder="郵便番号(空)">
+				</td>
+			</tr>
+			<td></td>
+			<td>
+				<input placeholder="住所(空)">
+			</td>
+		</table>
+		<!-- en d  -->
+
+	<button type='submit'>戻る</button>
+	<button type='submit'>登録する</button>
+	<!-- <%= link_to "戻る" %> -->
+	<!-- <%= link_to "登録する" %> -->
+
+
+</section>

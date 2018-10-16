@@ -1,0 +1,2 @@
+class CdFavorite < ApplicationRecord
+end

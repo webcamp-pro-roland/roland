@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  cart_id: 1
+  cd_id: 1
+  buy_id: 1
+  sub_total_price: 1
+  sub_total_number: 1
+
+two:
+  cart_id: 1
+  cd_id: 1
+  buy_id: 1
+  sub_total_price: 1
+  sub_total_number: 1

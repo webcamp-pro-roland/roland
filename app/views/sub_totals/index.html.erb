@@ -1,0 +1,45 @@
+<h2>購入画面</h2>
+
+            <!--カートのeach文  -->
+    <% @books.each do |book| %>
+
+	<p>CDタイトル<%= book.title %></p>
+	<p><%= attachment_image_tag @user, :photo, :fill, 20, 20, format: 'jpeg', fallback: "no_image.jpg" %></p>
+	<p>アーティスト名<%= book.body %></p>
+	<p>ジャンル<%= book.body %></p>
+	<p>レーベル<%= book.body %></p>
+	<p>枚数<%= book.body %></p>
+	<p>金額<%= book.body %></p>
+
+    <% end %>
+
+<h3>合計金額$</h3>
+<!-- 合計金額計算してください。コントローラーで計算して＠変数で渡すのもやりやすそうです -->
+
+<p>お届け先選択<br>
+<form>
+<input type="radio" > aa町aa番地
+<input type="radio" > bb町bb番地
+</p>
+<input type="submit" value="お届け先を決定">
+</form>
+<%= link_to "お届け先を追加する" %>
+
+
+
+<p>決済方法<br>
+<form>
+<input type="radio" name="" value="">a-aa-aaa
+<input type="radio" name="" value="">b-bb-bbb
+</p>
+<input type="submit" value="決済方法決定">
+</form>
+
+<%= link_to "クレジット情報を登録する" %>
+
+<!--   ラジオボタン参考にしたサイト   http://www-creators.com/archives/2386 -->
+
+<p><%= link_to "戻る" %></p>
+<p><%= link_to "注文を確定する" %></p>
+</div>
+

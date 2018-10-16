@@ -1,0 +1,12 @@
+<h1>お問い合わせ</h1>
+    <%= form_for(@bookf) do |f| %>
+        <h4>名前</h4>
+        <%= f.text_field :title %>
+        <h4>メールアドレス</h4>
+        <%= f.text_area :body %>
+        <h4>お問い合わせ内容</h4>
+        <%= f.text_area :body %>
+        <br>
+        <%= f.submit '送信' %>
+
+    <% end %>

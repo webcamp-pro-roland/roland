@@ -1,0 +1,12 @@
+<h1>お気に入り商品一覧</h1>
+*@cd_favorites.each do |cd|<br>
+<%# @cd_favorites.each do |cd|%>
+  <tr>
+    <td>CD画像<%#= attachment_image_tag cd, :cd_image, :fill, 40, 40, format: 'jpeg', class: "img-circle pull-left profile-img", fallback: "no_image_mini.jpg" %></td>
+    <td>CDタイトル<%#= cd.cd_title, class: 'cd_title' %></td>
+    <td>アーティスト<%#= cd.artist, class: 'rtist' %></td>
+    <td><%= link_to '削除', ,class: 'delete' %>
+  </tr>
+<%# end %>
+*end
+<%= link_to '戻る', ,class: 'back' %>

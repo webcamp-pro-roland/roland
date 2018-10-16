@@ -1,0 +1,16 @@
+<!-- リクエスト編集ページ -->
+<p>Find me in app/views/requests/new.html.erb</p>
+
+   <%= form_for(@user) do |requestm| %>
+    <%= attachment_image_tag @user, :image, class: "user_iprofile-img", fallback: "no_image.jpg",size: '100x100' %>
+    <%= f.attachment_field :image, placeholder: "プロフィール画像", class: "user_image" %>
+
+    <h4>タイトル</h4>
+    <%= requestm.text_area :user_name, %>
+  　<h4>本文</h4>
+    <%= requestm.text_area :furigana, %>
+    <h4>金額</h4>
+    <%= requestm.text_area :nickname %>
+
+    <%= requestm.submit '更新' %>
+

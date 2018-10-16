@@ -1,0 +1,10 @@
+<h1>ユーザーレビュー投稿ページ</h1>
+	*form_for(@comments) do |c|<br>
+	  <label for="">CDタイトル</label><br>
+	    <%= text_field :cd_title, autofocus: true, autocomplete: 'cd_title', class: 'cd_title'  %><br>
+	  <label for="">レビュータイトル</label><br>
+	    <%= text_field :review_title, autofocus: true, autocomplete: 'review_title', class: 'review_title'  %><br>
+	  <label for="">本文</label><br>
+	    <%= text_area :review_body, autofocus: true, autocomplete: 'review_body', class: 'review_body'  %><br>
+	*end<br>
+	<%= submit_tag '投稿' %>
